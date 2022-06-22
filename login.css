@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    margin-top: 120px;
+    border: 2px solid black;
+    height: 500px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: rgb(119, 3, 3);
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+#user-in,
+#pwd-in {
+    height: 40px;
+    width: 70%;
+    background-color: #D7D8D4;
+    border-radius: 12px;
+    font-family: fontawesome;
+    font-size: 18px;
+    border: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: white;
+    color: black;
+}
+
+#user-in {
+    margin-top: 80px;
+}
+
+#loginbtn {
+    background-color: rgb(36, 2, 2);
+    color: white;
+    font-weight: bold;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+p {
+    text-align: center;
+}
+
+#pwd-err,
+#user-err {
+    color: red;
+}

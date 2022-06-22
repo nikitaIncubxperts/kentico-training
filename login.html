@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="login.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet" />
+        <title>Login</title>
+    </head>
+    <body>
+        <div class="main" class="form-control">
+            <input type="text" id="user-in" class="form-control"
+                placeholder="Username">
+            <p id="user-err"></p><br>
+            <input type="password" id="pwd-in" class="form-control"
+                placeholder="Password">
+            <p id="pwd-err"></p><br>
+            <button onclick="show()" id="loginbtn" class="form-control">show</button>
+            <p>Forgot your email or login ID, and/or password?<br><span><a
+                        href="#">Click
+                        here</a></span></p>
+        </div>
+        <script>
+            function show(){
+                let username = document.getElementById("user-in").value;
+                let password = document.getElementById("pwd-in").value;
+                if(username==""&&password==""){
+                    document.getElementById("user-err").innerHTML = "Enter valid username";
+                }else if(username=="admin"&&password=="123"){
+                    window.open('home.html');
+                    document.getElementById("user-in").value="";
+                    document.getElementById("pwd-in").value="";
+                }
+                if(username!="admin"){
+                    document.getElementById("user-err").innerHTML = "Enter valid username";
+                }
+                else{
+                    document.getElementById("user-err").innerHTML = "";
+                }
+                if(password!="123"){
+                    document.getElementById("pwd-err").innerHTML = "Enter valid password";
+                }
+                else{
+                    document.getElementById("pwd-err").innerHTML = "";
+                }
+            }
+        </script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js">
+        </script>
+    </body>
+</html>
