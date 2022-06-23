@@ -11,20 +11,21 @@
         <title>Login</title>
     </head>
     <body>
-        <div class="main" class="form-control">
-            <input type="text" id="user-in" class="form-control"
-                placeholder="Username">
-            <p id="user-err"></p><br>
-            <input type="password" id="pwd-in" class="form-control"
-                placeholder="Password">
-            <p id="pwd-err"></p><br>
-            <button onclick="show()" id="loginbtn" class="form-control">show</button>
-            <p>Forgot your email or login ID, and/or password?<br><span><a
-                        href="#">Click
-                        here</a></span></p>
-        </div>
+		<form>
+			<div class="main" class="form-control">
+				<input type="text" id="user-in" class="form-control"
+					placeholder="Username">
+				<span id="user-err" class="text-danger font-weight-bold"></span><br>
+				<input type="password" id="pwd-in" class="form-control"
+					placeholder="Password">
+				<span id="pwd-err" class="text-danger font-weight-bold"></span><br>
+				<button  onclick="login();" type="button" id="loginbtn" class="form-control">Login</button>
+				<p>Forgot your email or login ID, and/or password?<br>
+				<span><a href="#">Click here</a></span></p>
+			</div>
+		<form>
         <script>
-            function show(){
+            function login(){
                 let username = document.getElementById("user-in").value;
                 let password = document.getElementById("pwd-in").value;
                 if(username==""&&password==""){

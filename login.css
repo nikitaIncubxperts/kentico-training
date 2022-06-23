@@ -47,11 +47,13 @@ body {
     display: block;
 }
 
-p {
+span,p{
     text-align: center;
 }
 
 #pwd-err,
 #user-err {
-    color: red;
+    margin-left:auto;
+	margin-right:auto;
+	display:block;
 }
